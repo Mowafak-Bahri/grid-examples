@@ -1,4 +1,4 @@
-.example-1,
+/* .example-1,
 .example-2,
 .example-3,
 .example-4,
@@ -8,7 +8,9 @@
 .example-8,
 .example-9,
 .example-10,
-.example-11{
+.example-11{ */
+
+/* .ex-container{
     background-color:lightseagreen;
     border: 2px solid black;
     border-radius:22px;
@@ -18,17 +20,59 @@
 }
 .example-12,
 .example-13,
-.example-14,
-.example-15{
+.example-14, */
+
+.ex-container{
     background-color:lightseagreen;
     border: 2px solid black;
     border-radius:22px;
     padding:33px;
     margin:33px;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+.btns-container{
+    background-color:rgb(133, 154, 71);
+    border: 2px solid black;
+    border-radius:22px;
+    padding:33px;
+    margin:33px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn{
+    border:none;
+    background-color:rgba(164, 92, 231,0.8);
+    font-weight: bold;
+    font-size:1.5rem;
+    border:2px solid white;
+    border-radius:42px;
+    padding:12px;
+    cursor:pointer;
+    min-width: 70px;
+    margin:10px;
+}
+.btn:hover{
+    background-color:rgb(78, 76, 176);
+}
+
+.add-item,
+.remove-item{
+    background-color:rgba(199, 122, 45, 0.8);
+    margin-bottom:30px;
+}
+.add-item:hover,
+.remove-item:hover{
+    background-color:rgba(216, 103, 127, 0.8);
+}
+
+
 
 /* Example-1: */
 .grid1 {
@@ -119,7 +163,7 @@
   
   /**/
   .grid3 {
-    max-width:600px;
+    min-width:600px;
     margin:auto;
     counter-reset:num;
   }
@@ -157,7 +201,7 @@
   
   /**/
   .grid4 {
-    max-width: 600px;
+    min-width: 600px;
     margin: auto;
     counter-reset: num;
   }
@@ -203,9 +247,16 @@
   
   /**/
   .grid5 {
-    max-width: 600px;
+    width: 600px;
     margin: auto;
     counter-reset: num;
+
+    /* width: 600px;
+    aspect-ratio: 1;
+    grid-gap: 5px;
+    vertical-align: top;
+    margin: auto;
+    counter-reset: num; */
   }
   .grid5 * {
     border: 2px solid;
@@ -558,12 +609,16 @@
     aspect-ratio: 1;
     object-fit: cover;
     transition: .35s;
-    filter: grayscale();
+    /* filter: grayscale(); */
+    /* transform: scale(var(--_t,1)); */
     cursor: pointer;
+    transition: .2s linear;
     
   }
   .gallery-1 > img:hover {
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
+    z-index: 1;
+    /* --_t: 0.95; */
   }
   
   .gallery-1 > img:nth-child(1) {

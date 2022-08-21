@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="btns-container">
+        <button onclick="showExample(1)" class="btn">1</button>
+        <button onclick="showExample(2)" class="btn">2</button>
+        <button onclick="showExample(3)" class="btn">3</button>
+        <button onclick="showExample(4)" class="btn">4</button>
+        <button onclick="showExample(5)" class="btn">5</button>
+        <button onclick="showExample(6)" class="btn">6</button>
+        <button onclick="showExample(7)" class="btn">7</button>
+        <button onclick="showExample(8)" class="btn">8</button>
+        <button onclick="showExample(9)" class="btn">9</button>
+        <button onclick="showExample(10)" class="btn">10</button>
+        <button onclick="showExample(11)" class="btn">11</button>
+        <button onclick="showExample(12)" class="btn">12</button>
+        <button onclick="showExample(13)" class="btn">13</button>
+        <button onclick="showExample(14)" class="btn">14</button>
+        <button onclick="showExample(15)" class="btn">15</button>
+    </div>
+
+
     <!-- Example-1: -->
-    <div class="example-1">
+    <div class="example-1 ex-container"">
       <div class="grid1">
         <div></div>
       </div>
@@ -32,7 +51,7 @@
     <!-- ************************************** -->
 
     <!-- Example-2: -->
-    <div class="example-2">
+    <div class="example-2 ex-container"">
       <div class="grid2">
         <div></div>
       </div>
@@ -70,7 +89,11 @@
     <!-- ************************************** -->
 
     <!-- Example-3: -->
-    <div class="example-3">
+    <div class="example-3 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid3')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid3')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid3">
         <div></div>
         <div></div>
@@ -89,7 +112,11 @@
     <!-- ************************************** -->
 
     <!-- Example-4: -->
-    <div class="example-4">
+    <div class="example-4 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid4')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid4')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid4">
         <div></div>
         <div></div>
@@ -108,7 +135,11 @@
     <!-- ************************************** -->
 
     <!-- Example-5: -->
-    <div class="example-5">
+    <div class="example-5 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid5')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid5')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid5">
         <div></div>
         <div></div>
@@ -135,7 +166,11 @@
     <!-- ************************************** -->
 
     <!-- Example-6: -->
-    <div class="example-6">
+    <div class="example-6 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid6')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid6')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid6">
         <div></div>
         <div></div>
@@ -162,7 +197,7 @@
     <!-- ************************************** -->
 
     <!-- Example-7: -->
-    <div class="example-7">
+    <div class="example-7 ex-container"">
       <div class="grid7">
         <div></div>
       </div>
@@ -391,7 +426,7 @@
     <!-- ************************************** -->
 
     <!-- Example-8: -->
-    <div class="example-8">
+    <div class="example-8 ex-container"">
       <div class="grid8">
         <div></div>
       </div>
@@ -425,7 +460,11 @@
     <!-- ************************************** -->
 
     <!-- Example-9: -->
-    <div class="example-9">
+    <div class="example-9 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid9')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid9')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid9">
         <div></div>
         <div></div>
@@ -442,7 +481,12 @@
     <!-- ************************************** -->
 
     <!-- Example-10: -->
-    <div class="example-10">
+    <div class="example-10 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid10')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid10')" class="remove-item btn">Remove item from Grid</button>
+        </div>
+        <h1>Try to resize window</h1>
       <div class="grid10">
         <div></div>
         <div></div>
@@ -464,7 +508,11 @@
     <!-- ************************************** -->
 
     <!-- Example-11: -->
-    <div class="example-11">
+    <div class="example-11 ex-container"">
+        <div class="add-remove-container">
+            <button onclick="add_item('.grid11')" class="add-item btn">Add item to Grid</button>
+            <button onclick="remove_item('.grid11')" class="remove-item btn">Remove item from Grid</button>
+        </div>
       <div class="grid11">
         <div></div>
         <div></div>
@@ -486,7 +534,7 @@
     <!-- ************************************** -->
 
     <!-- Example-12: -->
-    <div class="example-12">
+    <div class="example-12 ex-container"">
         <div class="gallery-1">
             <img src="https://picsum.photos/id/1040/300/300" alt="a house on the mountain">
             <img src="https://picsum.photos/id/1054/300/300" alt="a big building">
@@ -517,7 +565,7 @@
     <!-- ************************************** -->
 
     <!-- Example-13: -->
-    <div class="example-13">
+    <div class="example-13 ex-container"">
         <div class="gallery-2">
             <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
             <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
@@ -531,7 +579,7 @@
     <!-- ************************************** -->
 
     <!-- Example-14: -->
-    <div class="example-14">
+    <div class="example-14 ex-container"">
         <div class="gallery-3">
             <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
             <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
@@ -545,7 +593,7 @@
     <!-- ************************************** -->
 
     <!-- Example-15: -->
-    <div class="example-15">
+    <div class="example-15 ex-container">
         <div class="gallery-4">
             <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain">
             <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers">
@@ -556,5 +604,32 @@
     <!-- ************************************** -->
 
 
+    <script>
+        function showExample(num){
+            // hide All
+            const ex_containers = document.getElementsByClassName("ex-container")
+            for (let i = 0; i < ex_containers.length; i++) {
+                ex_containers[i].style.display = "none"
+            }
+            // show example
+            const ex =document.getElementsByClassName("example-" + num)
+                ex[0].style.display="flex"
+        }
+
+        function add_item(gridID){
+            let grid = document.querySelector(gridID);
+            grid.innerHTML +=`
+                <div></div>
+            `;
+            // console.log(grid)
+        }
+
+        function remove_item(gridID){
+            let grid =document.querySelector(gridID)
+            grid.querySelector(gridID + " div:last-of-type").remove()
+        }
+
+
+    </script>
   </body>
 </html>
